@@ -631,7 +631,7 @@
     const land = vw > vh * 1.15 && vh < 640;      // a phone on its side: wider, shorter field
     if (land) {
       scale = vh / 460;
-      W = Math.round(Math.min(640, vw / scale));
+      W = Math.round(vw / scale);
       TIPF = 0.72; SPDM = 0.75;                    // less look-ahead, so ease the pace to match
     } else {
       scale = Math.min(vw / 360, vh / 560);
